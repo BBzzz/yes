@@ -1,0 +1,42 @@
+2013/10/01 11:30:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/botond/public_html/yes/protected/controllers/ProductsController.php:70
+Stack trace:
+#0 /home/botond/public_html/yes/protected/controllers/ProductsController.php(46): ProductsController->loadModel('index')
+#1 [internal function]: ProductsController->actionView('index')
+#2 /home/botond/public_html/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#3 /home/botond/public_html/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductsController), Object(ReflectionMethod), Array)
+#4 /home/botond/public_html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/botond/public_html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /home/botond/public_html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /home/botond/public_html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /home/botond/public_html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/botond/public_html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/botond/public_html/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /home/botond/public_html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/botond/public_html/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /home/botond/public_html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('products/view')
+#14 /home/botond/public_html/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /home/botond/public_html/yes/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yes/products/index
+---
+2013/10/01 11:31:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/botond/public_html/yes/protected/controllers/ProductsController.php:70
+Stack trace:
+#0 /home/botond/public_html/yes/protected/controllers/ProductsController.php(46): ProductsController->loadModel('view')
+#1 [internal function]: ProductsController->actionView('view')
+#2 /home/botond/public_html/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#3 /home/botond/public_html/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductsController), Object(ReflectionMethod), Array)
+#4 /home/botond/public_html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/botond/public_html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /home/botond/public_html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /home/botond/public_html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /home/botond/public_html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/botond/public_html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/botond/public_html/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /home/botond/public_html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/botond/public_html/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /home/botond/public_html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('products/view')
+#14 /home/botond/public_html/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /home/botond/public_html/yes/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yes/products/view/
+---

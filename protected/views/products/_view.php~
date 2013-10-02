@@ -1,0 +1,22 @@
+<?php
+/* @var $this ProductsController */
+/* @var $data Products */
+?>
+
+<div class="view">
+      	<img src="<?php echo $this->product_image($data->image_name, 'thumb'); ?>" alt="<?php echo $data->denomination ?>" />
+  	<br />
+	
+	<b><?php echo CHtml::encode($data->getAttributeLabel('code')); ?>:</b>
+	<?php echo CHtml::link(CHtml::encode($data->code), array('view', 'id'=>$data->code)); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('denomination')); ?>:</b>
+	<?php echo CHtml::encode(nl2br($data->denomination)); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('description')); ?>:</b>
+	<?php echo CHtml::encode($data->description); ?>
+	<br />
+
+</div>

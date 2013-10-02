@@ -1,0 +1,15 @@
+<?php
+return array(
+	'stock1'=>array(
+		'prod_code' => 'xyz0078976',
+		'quantity' => '1',
+		'p_price' => '1',
+		's_price' => '1',
+		'init_quantity' => '1',
+		'quantity_in' => '0',
+		'quantity_out' => '0',
+		'last_entry_date' => '',
+		'last_exit_date' => '',
+		),
+);
+

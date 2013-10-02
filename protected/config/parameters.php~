@@ -1,0 +1,26 @@
+<?php
+return array(
+		'imagedir' => '/public/upload/images/',
+		'imagewebdir' => '/public/upload/images/',
+
+    // image sizes
+    'thumb-width' => 110,
+    'thumb-height' => 110,
+    'thumbnail-width' => 110,
+    'thumbnail-height' => 110,
+    'medium-width' => 300,
+    'medium-height' => 210,
+    'large-width' => 633,
+    'large-height' => 446,
+    'full-width' => 950,
+    'full-height' => 670,
+    
+    'banner-landscape-width' => 1332,
+    'banner-landscape-height' => 288,
+    'banner-portrait-width' => 480,
+    'banner-portrait-height' => 480,
+    'banner-landscape-retina-width' => 2664,
+    'banner-landscape-retina-height' => 576,
+    'banner-portrait-retina-width' => 960,
+    'banner-portrait-retina-height' => 960,
+);

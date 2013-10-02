@@ -1,0 +1,7 @@
+update user eseten a jelszót ne kelljen beírni
+ugyanott a jogosultságot helyesen mutassa
+products/kód-ot felismerje ##
+ugyanott az "enter"-ek megjelenjenek (formázás) ??
+lehessen látni a gépet az interneten keresztül ??
+Bootstrap yii extension ??
+123 oldal termékválasztás
