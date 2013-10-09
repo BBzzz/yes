@@ -40,3 +40,48 @@ Stack trace:
 #16 {main}
 REQUEST_URI=/yes/products/view/
 ---
+2013/10/08 10:42:05 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yes_dev.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/10/08 15:42:26 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'tbl_products' already exists. The SQL statement executed was: CREATE TABLE `tbl_products` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`code` varchar(255) NOT NULL,
+	`denomination` varchar(255) NOT NULL,
+	`description` text,
+	`image_name` varchar(255) NOT NULL,
+	`create_time` date,
+	`create_user_id` int(11),
+	`update_time` date,
+	`update_user_id` int(11)
+).
+2013/10/09 09:28:10 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1005 Can't create table 'yes_dev.tbl_products' (errno: 150). The SQL statement executed was: CREATE TABLE `tbl_products` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`code` varchar(255) NOT NULL,
+	`denomination` varchar(255) NOT NULL,
+	`description` text,
+	`image_name` varchar(255) NOT NULL,
+	`create_time` date,
+	`create_user_id` int(11),
+	`update_time` date,
+	`update_user_id` int(11)
+).
+2013/10/09 09:29:26 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1005 Can't create table 'yes_dev.tbl_products' (errno: 150). The SQL statement executed was: CREATE TABLE `tbl_products` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`code` varchar(255) NOT NULL,
+	`denomination` varchar(255) NOT NULL,
+	`description` text,
+	`image_name` varchar(255) NOT NULL,
+	`create_time` date,
+	`create_user_id` int(11),
+	`update_time` date,
+	`update_user_id` int(11)
+).
+2013/10/09 10:03:41 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1005 Can't create table 'yes_dev.tbl_products' (errno: 150). The SQL statement executed was: CREATE TABLE `tbl_products` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`code` varchar(255) NOT NULL,
+	`denomination` varchar(255) NOT NULL,
+	`description` text,
+	`image_name` varchar(255) NOT NULL,
+	`create_time` date,
+	`create_user_id` int(11),
+	`update_time` date,
+	`update_user_id` int(11)
+).

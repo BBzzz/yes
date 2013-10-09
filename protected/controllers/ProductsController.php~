@@ -15,7 +15,6 @@ class ProductsController extends Controller
 	{
 		return array(
 			'accessControl', // perform access control for CRUD operations
-			'postOnly + delete', // we only allow deletion via POST request
 		);
 	}
 
@@ -66,7 +65,8 @@ class ProductsController extends Controller
 	 */
 	public function loadModel($id)
 	{
-		$model=Products::model()->findByPk($id);
+//		$model=Products::model()->findByPk($id);
+		$model=Products::model()->findByAttribute(array("code"=>$id));
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;

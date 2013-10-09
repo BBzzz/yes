@@ -16,7 +16,7 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
-		'application.modules.admin.models.*',
+//		'application.modules.admin.models.*',
 	),
 
 	'modules'=>array(
@@ -37,10 +37,11 @@ return array(
 		),
 		// uncomment the following to enable URLs in path-format
 		
-		'urlManager'=>array(
+/*		'urlManager'=>array(
 			'urlFormat'=>'path',
 			'rules'=>array(
-				'products/<id:\w+>/*'=>'products/view',
+//				'products/<id:\w+>/*'=>'products/view',
+				'products/<code:\w+>/*'=>'products/view',
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
@@ -71,9 +72,9 @@ return array(
 					'levels'=>'error, warning',
 				),
 				// uncomment the following to show log messages on web page
-				array(
+				/*array(
 					'class'=>'CWebLogRoute',
-				),
+				),*/
 			),
 		),
 		'authManager'=>array(
