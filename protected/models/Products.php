@@ -47,7 +47,7 @@ class Products extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('code, denomination, description, image_name, create_time, create_user_id, update_time, update_user_id', 'required'),
+			array('code, denomination, description', 'required'),
 			array('code', 'length', 'max'=>20),
 			array('denomination', 'length', 'max'=>100),
 			array('image_name', 'length', 'max'=>128),
@@ -64,11 +64,11 @@ class Products extends CActiveRecord
 	{
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
-		return array(
+/*		return array(
 			'createUser' => array(self::BELONGS_TO, 'User', 'create_user_id'),
 			'updateUser' => array(self::BELONGS_TO, 'User', 'update_user_id'),
 			'stock' => array(self::HAS_ONE, 'Stock', 'prod_code'),
-		);
+		);*/
 	}
 
 	/**
